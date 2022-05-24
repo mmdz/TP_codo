@@ -22,6 +22,7 @@ header{
 	background-size: cover;
 /* 	height: 10rem;
  */	display:block;
+ 
 }
 
 nav {
@@ -31,6 +32,8 @@ nav {
 }
 
 nav ul{
+	border-bottom: 2px solid #2bff88;
+
 	list-style: none; /*le quita las viñetas*/
 	background: #16161A;/*#2CB67D;/*#1F618D;#003245;*/
 	text-align: right;
@@ -52,6 +55,7 @@ ul li a{ /*A maneja el link en si*/
 
 ul li a:hover{ /*cuando paso x arriba cambia el color*/
 	color: #2bff88;
+	text-decoration: none;
 }
 
 .iconos-nav {
@@ -104,20 +108,34 @@ main {
 #contenedor_formu{
 	width: 36%;
     float: right;
-    background-color: rgba(93, 186, 93, 0.3);
-	padding-left: 1%;
+/*     background-color: #5dba5d4d;
+ */	padding-left: 1%;
 	padding-right: 1%;
 	border-radius: 2%;
+	box-shadow: 1px 1px 3px rgb(28, 110, 57);
+	box-shadow: 2px 2px 5px rgb(28, 110, 57);
+	background-color: #6effd2;
+	background-image: linear-gradient(0deg, #6effd2 55%, #2f2b2b 88%);
+		padding:1%;
+
+
 }
 
 #contenedor_redes{
 	width: 58%;
     float: left;
 	margin-right: 1%;
-    background-color: rgba(93, 186, 93, 0.3);
-	padding-top: 1%;
+/*     background-color: rgba(93, 186, 93, 0.3);
+ */	padding-top: 1%;
 	padding-bottom: 1%;
 	border-radius: 2%;
+	box-shadow: 1px 1px 3px rgb(28, 110, 57);
+	box-shadow: 2px 2px 5px rgb(28, 110, 57);
+	background-color: #6effd2;
+	background-image: linear-gradient(0deg, #6effd2 55%, #2f2b2b 88%);
+		padding:1%;
+
+		display: inline-flex;
 
 }
 
@@ -125,6 +143,7 @@ main {
 	float: right;
 	padding-left: 2%;
 	padding-right: 2%;
+	box-sizing: content-box;
 }
 
 #donde iframe{
@@ -135,7 +154,7 @@ main {
 	float: left;
 	padding-left: 2%;
 	padding-right: 2%;
-
+	box-sizing: content-box;
 }
 
 
@@ -143,6 +162,7 @@ main {
 .titulos{
 	font-size: 2.5rem;
 	margin-bottom: 4%;
+	color: #d9fcfa;
 }
 
 #nombres_redes {
@@ -178,4 +198,18 @@ main {
 	padding-bottom: 2%;
 	margin-bottom: 5%;
 	width: 30%;
+}
+
+.container {
+	padding-left: 1%;
+	padding-right: 1%; 
+}
+
+#redes a {
+	color: currentColor;
+}
+
+#redes  a:hover{
+/*cuando paso x arriba cambia el color*/
+	text-decoration: underline;
 }

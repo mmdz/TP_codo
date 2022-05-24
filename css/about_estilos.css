@@ -9,7 +9,6 @@ body{
 	/*, Tahoma, Helvética, Arial, Verdana, sans-serif;*/
 	background-image: url("../img/fondo_hojitas.png");
 	text-align: center;
-	color:red;
 }
 
 /*********manejo de cabecera index***********/
@@ -29,6 +28,8 @@ nav {
 	padding-bottom: 0px;
 	display: block;
 	position: relative;
+	border-bottom: 2px solid #2bff88;
+
 }
 
 nav ul{
@@ -91,3 +92,119 @@ footer p {
 	word-spacing: 0.2rem;
 /* 	letter-spacing: 0.3rem;
  */}
+
+ /***********contenedor carteles*******************/
+ .wrapper {
+	margin-top: 0.5%; 
+	margin-bottom: 1%;
+	margin-left: 3%;
+	margin-right: 3%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+
+  }
+  .quienes {
+	box-shadow: 2px 2px 5px rgb(28, 110, 57);
+	background-color: #6effd2;
+	background-image: linear-gradient(0deg, #6effd2 55%, #2f2b2b 88%);
+	
+	padding:1%;
+	grid-column: 1;
+	grid-row: 1;
+  }
+  .mision {
+	box-shadow: 2px 2px 5px rgb(28, 110, 57);
+	background-color: #6effd2;
+	background-image: linear-gradient(0deg, #6effd2 55%, #2f2b2b 88%);
+		
+	padding:1%;
+
+	grid-column: 2;
+	grid-row: 1;
+  }
+  .valores {
+	box-shadow: 2px 2px 5px rgb(28, 110, 57);
+	background-color: #6effd2;
+	background-image: linear-gradient(0deg, #6effd2 55%, #2f2b2b 88%);
+		
+	padding:1%;
+
+	grid-column: 1;
+	grid-row: 2;
+  }
+  .info {
+	box-shadow: 2px 2px 5px rgb(28, 110, 57);
+	background-color: #6effd2;
+	background-image: linear-gradient(0deg, #6effd2 55%, #2f2b2b 88%);
+	
+	padding:1%;
+
+	grid-column: 2;
+	grid-row: 2/2;
+  }
+
+  .porque {
+	  
+	box-shadow: 2px 2px 5px rgb(28, 110, 57);
+	background-color: #6effd2;
+	background-image: linear-gradient(0deg, #6effd2 55%, #2f2b2b 88%);
+		padding:1%;
+
+	grid-column-start: 1; 
+	grid-column-end: 3; 
+	grid-row-start: 3; 
+	grid-row-end: 3;
+  }
+
+.info ul {
+	padding-top: 1%;
+	  list-style: none;
+  }
+
+.info a{
+	color:	#16161A;
+  }
+
+
+.info  ul li a:hover{ /*cuando paso x arriba cambia el color*/
+/* 	color: #2bff88;
+ 	background-color: rgba(87, 110, 101, 0.3);
+ 	padding-left:3%;
+	padding-right: 3%; */
+	
+	color:	#16161A;
+	text-decoration: underline;
+}
+
+/* .info #link_2 a:hover {
+	background-color: rgba(9, 12, 10, 0.4);
+	padding-left:3%;
+	padding-right: 3%;
+}
+
+.info #link_3 a:hover {
+	background-color: rgba(9, 12, 10, 0.4);
+	padding-left:3%;
+	padding-right: 3%;
+}
+
+.info #link_4 a:hover {
+	background-color: rgba(9, 12, 10, 0.4);
+	padding-left:3%;
+	padding-right: 3%;
+} */
+
+section h1{
+	color: #d9fcfa;
+}
+
+.wrapper p{
+	font-size: 1.1rem;
+	padding-top: 2%;
+}
+
+.info h1{
+	padding-bottom: 2%;
+}

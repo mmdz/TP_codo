@@ -28,6 +28,8 @@ nav {
 	padding-bottom: 0px;
 	display: block;
 	position: relative;
+	border-bottom: 2px solid #2bff88;
+
 }
 
 nav ul{
@@ -109,6 +111,7 @@ footer p {
 	padding-top: 1%;
 	padding-bottom: 1%;
 	border-radius: 2%;
+	box-shadow: 1px 1px 3px rgb(28, 110, 57);
 
 }
 
@@ -120,6 +123,7 @@ footer p {
 	padding-left: 2%;
 	padding-right: 2%;
 	border-radius: 2%;
+	box-shadow: 1px 1px 3px rgb(28, 110, 57);
 
 }
 
@@ -129,11 +133,10 @@ footer p {
 	display: flex !important;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap:5em;
-	border:1px dashed #777;
+	border: 1px dashed #777;
 	height:200px;
 	width:300px;  
 	border-radius: 5%;
-
   }
   
   .item{
@@ -170,6 +173,7 @@ footer p {
   .escalar:hover{
 	transform: scale(2);
 	border-radius: 5%;
+	border: 2px solid #2bff88;
 
   }
 

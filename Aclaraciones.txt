@@ -13,3 +13,5 @@ de todas las páginas.
 
 3. Debajo de la cuadricula de imágenes, se puede acceder a la página de contacto
 presionando sobre la palabra  "Contacto" resaltada en verde. 
+
+4. Se utilizan flex y grid en las vistas Quienes Somos y Contacto.
