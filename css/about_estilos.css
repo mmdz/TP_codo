@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+ 	box-sizing:border-box;
+}
+
+body{
+	font-family: handlee, Verdana, Arial,Tahoma,sans-serif;
+	/*, Tahoma, Helvética, Arial, Verdana, sans-serif;*/
+	background-image: url("../img/fondo_hojitas.png");
+	text-align: center;
+	color:red;
+}
+
+/*********manejo de cabecera index***********/
+header{
+	width: 100%; /*el ancho que ocupa*/
+	color: #d9fcfa;
+	background: #16161A;
+	font-size: 1.35rem;
+/* 	background-color: green;
+ */	background-image: url("../img/fondo_naturaleza_2.jpg");
+	background-size: cover;
+/* 	height: 10rem;
+ */	display:block;
+}
+
+nav {
+	padding-bottom: 0px;
+	display: block;
+	position: relative;
+}
+
+nav ul{
+	list-style: none; /*le quita las viñetas*/
+	background: #16161A;/*#2CB67D;/*#1F618D;#003245;*/
+	text-align: right;
+	padding-right: 1rem;
+}
+
+nav ul li{
+	display: inline-block; /*q esten uno al lado del otro*/
+ 	padding-left: 1rem;
+	transition: all ease-in-out 500ms;/*cuanto tarda en cambiar*/
+}
+
+ul li a{ /*A maneja el link en si*/
+	text-decoration:none; /*le quito el subrayado*/
+	font-size: 1.3em;
+	color: #d9fcfa;
+
+}
+
+ul li a:hover{ /*cuando paso x arriba cambia el color*/
+	color: #2bff88;
+}
+
+.iconos-nav {
+	font-size: 1.2rem;
+}
+
+#titulo_head {
+	padding-top: 1%;
+	padding-bottom: 1%;
+/* 	font-family: 'Lovers Quarrel', cursive;
+ */	
+/*  font-family: 'Rouge Script', cursive;
+ */ font-family: 'Cormorant Unicase', serif;
+ 	font-size: 3rem;
+	 text-shadow: 2px  0px 0px #16161A, /*sombra del titulo*/
+	 0px  2px 0px #16161A,
+	-2px  0px 0px #16161A,
+	 0px -2px 0px #16161A;	
+	 letter-spacing: 1rem;
+}
+
+/*****footer********************/
+footer {
+	width: 100%; /*el ancho que ocupa*/
+	color: #d9fcfa;
+	background: #16161A;
+	font-size: 0.75rem;
+	background-size: cover; 	
+    display:block;
+	margin-bottom: 0px;
+}
+
+footer p {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+	word-spacing: 0.2rem;
+/* 	letter-spacing: 0.3rem;
+ */}
