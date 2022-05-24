@@ -153,6 +153,12 @@ footer p {
 
   #comprar a {
 	color: #2bff88;
+	text-decoration: none;
+  }
+
+  #comprar a:hover {
+	text-decoration: underline;
+
   }
  /*******transformacion sobre imagenes******/
   .escalar {

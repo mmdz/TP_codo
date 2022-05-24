@@ -26,7 +26,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/contacto_estilos.css"> 
-    <script src='main.js'></script>
+    <script src="../js/validaciones_form.js"></script>
     <link rel="shortcut icon" href="../img/limon_img_title.jpg">
     <title>Contacto</title>
 
@@ -76,34 +76,34 @@
                 
                 <div class="cuerpo_formu">	
                     
-                    <form action="#" method="POST">
+                    <form action="#" method="get" name="formulario">
                     
                         <div class="contenido_form">
 
                             <div class="form-inline">
                                 <label for="nombre">Nombre </label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellido">
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y apellido">
                             </div>
                                                     
                             <div class="form-inline">
                                 <label for="email">Email </label>
-                                <input type="text" class="form-control" id="email" placeholder="usuario@dominio.com">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="usuario@dominio.com">
                             </div>
           
                             <div class="form-inline">
                                 <label for="telefono">Tel&eacute;fono </label>
-                                <input type="text" class="form-control" id="telefono" placeholder="112345678">
+                                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="112345678">
                             </div>
                                  <div class="form-inline">
                                 <label for="mensaje">Mensaje </label>
-                                <input type="textarea" class="form-control" id="mensaje" placeholder="Mensaje">
+                                <input type="textarea" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje">
                             </div>                    
                         </div><!--fin carga datos-->
                         
-                        <input type="checkbox" id="suscripcion">
+                        <input type="checkbox" id="suscripcion" name="suscripcion">
                         <label for="suscripcion"><i>Deseo recibir informaci&oacute;n en mi casilla de correo.</i></label>
                         <br>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <input type="submit" name="btn" id="btn" class="btn btn-primary" value="Enviar">
                     </form>
                 
                 </div> <!--fin cuerpo formu-->	
