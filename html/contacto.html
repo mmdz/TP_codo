@@ -26,7 +26,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/contacto_estilos.css"> 
-    <script src="../js/validaciones_form.js"></script>
+    
     <link rel="shortcut icon" href="../img/limon_img_title.jpg">
     <title>Contacto</title>
 
@@ -84,7 +84,7 @@
                 
                 <div class="cuerpo_formu">	
                     
-                    <form action="#" method="get" name="formulario">
+                    <form action="" method="get" name="formulario">
                     
                         <div class="contenido_form">
 
@@ -100,11 +100,11 @@
           
                             <div class="form-inline">
                                 <label for="telefono">Tel&eacute;fono </label>
-                                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="112345678">
+                                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="+54 112345678">
                             </div>
                                  <div class="form-inline">
                                 <label for="mensaje">Mensaje </label>
-                                <input type="textarea" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje">
+                                <input type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje">
                             </div>                    
                         </div><!--fin carga datos-->
                         
@@ -123,5 +123,57 @@
         <!--Copyright se escritbe con &#169;-->
         <p> &#169; 2022 Melisa S. M&eacute;ndez. Todos los derechos reservados.</p>
     </footer>
+
+        <!--script a validaciones de formulario-->
+        <script>
+            (function (){ 
+                //Variables
+
+                var formulario = document.getElementsByName('formulario')[0],  
+                    elementos = formulario.elements,                            
+                    boton = document.getElementById('btn');                    
+
+                       
+                var validarNombre = function(e){
+                    if (formulario.nombre.value == 0){     
+                        alert("Completa el campo nombre");
+                        e.preventDefault();                                  
+                    }
+                };
+         
+                var validarEmail = function(e){
+                        re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+                        if(!re.exec(formulario.email.value)){
+                            alert('Completa correctamente el campo email@mail.com ');
+                        }
+                };
+
+              var validarMensaje = function(e){
+                    if (formulario.mensaje.value == 0){      
+                        alert("Escribe un mensaje");
+                        e.preventDefault();                                   
+                    }
+                };
+
+         
+                var validarCheckbox = function(e){
+                    if (formulario.suscripcion.checked == true){
+                        alert("Gracias por suscribirte!");
+                        e.preventDefault();
+                    }
+                };
+                 
+                var validar = function(e){  
+                    validarNombre(e);
+                    validarEmail(e);
+                    validarMensaje(e);
+                    validarCheckbox(e);
+                };
+                
+       
+                formulario.addEventListener("submit", validar);
+            }())
+        </script>
 </body>    
+
 </html>

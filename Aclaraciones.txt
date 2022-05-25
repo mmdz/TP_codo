@@ -15,3 +15,7 @@ de todas las páginas.
 presionando sobre la palabra  "Contacto" resaltada en verde. 
 
 4. Se utilizan flex y grid en las vistas Quienes Somos y Contacto.
+
+5.Se valida el formulario utilizando un script dentro del html (contacto.html), 
+donde se verifica que se completen los campos, si el mail esta escrito de la forma
+usuario@usuario.com y por ultimo si tilda en checkbox se agradece por suscribirse.
