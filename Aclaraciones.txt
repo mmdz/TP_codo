@@ -9,13 +9,29 @@ dentro del catálogo de plantas, pasando el mouse sobre la imagen
 ésta se agranda permitiendo verla con mejor detalle.
 
 2. Se utilzaron e importaron íconos de FONTAWESOME el menu de navegación
-de todas las páginas.
+de todas las páginas y fuentes importadas de googleFonts. También se aplica
+un mapa con iframe en la pág. de contacto.
 
-3. Debajo de la cuadricula de imágenes, se puede acceder a la página de contacto
+3. En la vista INICIO, debajo de la cuadricula de imágenes, se puede acceder a la página de contacto
 presionando sobre la palabra  "Contacto" resaltada en verde. 
 
-4. Se utilizan flex y grid en las vistas Quienes Somos y Contacto.
+4. Se utilizan flex y grid en las vistas Quienes Somos y Contacto. Se utilizan 
+algunas clases de Bootstrap para darle estilo al formulario de contacto.
 
-5.Se valida el formulario utilizando un script dentro del html (contacto.html), 
+5. Se valida el formulario utilizando un script dentro del html (contacto.html), 
 donde se verifica que se completen los campos, si el mail esta escrito de la forma
 usuario@usuario.com y por ultimo si tilda en checkbox se agradece por suscribirse.
+
+6. En la vista Quienes somos (about.html) se aplican querys:
+
+>> Para 412px: el nav se reduce a solo iconos de enlace con alineacion centrada, cuando se pasa el mouse
+sobre ellos se le un title indicando hacia donde va. 
+El titulo de la pagina se ajusta al espacio, quitando el espacio entre letras.
+El header se fija en la parte superior.
+Se alinea la grilla en una fila vertical.
+
+>>Para 601px: el nav se centra, se reduce el tamaño de sus letras y se fija.
+La grilla se alinea en una columna central.
+
+>> Para 800px: cambia el color de fondo de cada cuadro explicativo de la grilla 
+ y el color de los titulos de las mismas.
